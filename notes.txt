@@ -3,3 +3,6 @@ npm install -g json-server
 
 Run server (Git Bash):
 json-server --watch data/traveldb.json (optional: --port 5001)
+
+Installation of redux toolkit:
+npm i @reduxjs/toolkit@1.9.1 react-redux@8.0.5
