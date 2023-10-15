@@ -1,0 +1,5 @@
+Installation of local JSON server:
+npm install -g json-server
+
+Run server (Git Bash):
+json-server --watch data/traveldb.json (optional: --port 5001)
