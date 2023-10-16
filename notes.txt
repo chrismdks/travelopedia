@@ -6,3 +6,10 @@ json-server --watch data/traveldb.json (optional: --port 5001)
 
 Installation of redux toolkit:
 npm i @reduxjs/toolkit@1.9.1 react-redux@8.0.5
+
+RTK Query
+Queries: used to fetch data (Get/GetALL)
+Mutation: used to update data (Create/Update/Delete)
+
+RTK query eliminates duplicate calls. Request will be executed only once.
+
