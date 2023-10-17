@@ -7,7 +7,12 @@ export const destinationApi = createApi({
   endpoints: (builder) => ({
     //Query is used for GET request
     getAllDestination: builder.query({
-      query: () => "destination",
+      //query: () => "destination",
+      query: () => ({
+        url: "destination",
+        method: "GET",
+        params: {},
+      }),
       providesTags: ["Destinations"], // Tag
     }),
     //Mutation is used for POST/PUT/DELETE request
