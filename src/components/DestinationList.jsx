@@ -1,5 +1,5 @@
 import React from 'react'
-import { useDeleteDestinationMutation, useGetAllDestinationQuery } from '../api/destinationApi'
+import { useDeleteDestinationMutation, useGetAllDestinationQuery } from '../api/DestinationApi'
 
 function DestinationList() {
 

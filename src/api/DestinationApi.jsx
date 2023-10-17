@@ -1,6 +1,6 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react"
 
-export const destinationApi = createApi({
+export const DestinationApi = createApi({
   reducerPath: "apidestination",
   baseQuery: fetchBaseQuery({baseUrl:"http://localhost:3000/"}),
   tagTypes: ["Destinations"], //supported tags
@@ -13,6 +13,7 @@ export const destinationApi = createApi({
         method: "GET",
         params: {},
       }),
+      transformResponse: (res) => res.sort((a,b) => b.id - a.id), // transform response data
       providesTags: ["Destinations"], // Tag
     }),
     //Mutation is used for POST/PUT/DELETE request
@@ -46,4 +47,4 @@ export const destinationApi = createApi({
 export const { useGetAllDestinationQuery, 
   useAddDestinationMutation, 
   useUpdateDestinationMutation, 
-  useDeleteDestinationMutation } = destinationApi
+  useDeleteDestinationMutation } = DestinationApi
