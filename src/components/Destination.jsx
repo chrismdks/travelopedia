@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useDeleteDestinationMutation, useUpdateDestinationMutation } from '../api/DestinationApi'
+import { useDeleteDestinationMutation, useUpdateDestinationMutation } from '../api/destinationApi'
 
 const Destination = ({destination}) => {
 

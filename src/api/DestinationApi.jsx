@@ -1,6 +1,6 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react"
 
-export const DestinationApi = createApi({
+export const destinationApi = createApi({
   reducerPath: "apidestination",
   baseQuery: fetchBaseQuery({baseUrl:"http://localhost:3000/"}),
   tagTypes: ["Destinations"], //supported tags
@@ -47,4 +47,4 @@ export const DestinationApi = createApi({
 export const { useGetAllDestinationQuery, 
   useAddDestinationMutation, 
   useUpdateDestinationMutation, 
-  useDeleteDestinationMutation } = DestinationApi
+  useDeleteDestinationMutation } = destinationApi

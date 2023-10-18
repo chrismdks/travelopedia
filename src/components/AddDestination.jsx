@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { useAddDestinationMutation } from '../api/DestinationApi';
+import { useAddDestinationMutation } from '../api/destinationApi';
 
 function AddDestination() {
 

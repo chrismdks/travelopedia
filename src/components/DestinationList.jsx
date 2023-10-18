@@ -1,9 +1,8 @@
 import React from 'react'
-import { useGetAllDestinationQuery } from '../api/DestinationApi'
+import { useGetAllDestinationQuery } from '../api/destinationApi'
 import Destination from './Destination';
 
 function DestinationList() {
-
   const {data, isLoading, isSuccess, isError, error} = useGetAllDestinationQuery();
 
   let content;
